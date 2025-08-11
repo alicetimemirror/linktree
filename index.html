@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>AliceTimeMirror - Links</title>
+<style>
+    body {
+        background: linear-gradient(135deg, #0d0d0d, #1a0033);
+        font-family: 'Arial', sans-serif;
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .profile-pic {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 4px solid #ff00ff;
+        box-shadow: 0 0 20px #ff00ff;
+        margin-top: 40px;
+        object-fit: cover;
+    }
+    h1 {
+        font-size: 2rem;
+        color: #ff66ff;
+        text-shadow: 0 0 10px #ff00ff;
+        margin-bottom: 20px;
+    }
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .link-btn {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #111;
+        box-shadow: 0 0 20px rgba(255,0,255,0.7);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .link-btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 40px rgba(255,0,255,1);
+    }
+    .link-btn img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #000;
+        padding: 6px;
+        box-sizing: border-box;
+    }
+    
+/* Farb- und Gloweinstellungen für TikTok und Discord Icons */
+.link-btn img.icon-img {
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.link-btn.tiktok-btn img.icon-img {
+    filter: drop-shadow(0 0 4px #25F4EE) drop-shadow(0 0 4px #FE2C55);
+}
+
+.link-btn.discord-btn img.icon-img {
+    background: #5865F2;
+    filter: drop-shadow(0 0 4px #5865F2);
+}
+
+.link-btn:hover img.icon-img {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px #ff00ff);
+}
+</style>
+</head>
+<body>
+<img alt="Profilbild" class="profile-pic" src="https://i.ibb.co/0p6pSqD4/20bd09e4-1ea8-4290-8df2-d81ba3ae5772.jpg"/>
+<h1>AliceTimeMirror</h1>
+<div class="button-container">
+<a class="link-btn tiktok-btn" href="https://www.tiktok.com/@alicetimemirror" rel="noopener noreferrer" target="_blank">
+<img alt="TikTok" class="icon-img" decoding="async" loading="lazy" src="https://cdn.simpleicons.org/tiktok/FFFFFF"/>
+</a>
+<a class="link-btn discord-btn" href="https://discord.gg/JSUAySvz5F" rel="noopener noreferrer" target="_blank">
+<img alt="Discord" class="icon-img" decoding="async" loading="lazy" src="https://cdn.simpleicons.org/discord/FFFFFF"/>
+</a>
+<a class="link-btn" href="https://www.youtube.com/@AliceTimeMirror" rel="noopener noreferrer" target="_blank">
+<img alt="YouTube" src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png"/>
+</a>
+</div>
+</body>
+</html>
